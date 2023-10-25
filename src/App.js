@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import Cursor from './components/Cursor';
 
 function App() {
+
+  // useEffect(() => {
+  //   const videoElement = document.getElementById('video');
+  //   const videoSource = 'http://localhost:8000/'; 
+
+  //   videoElement.src = videoSource;
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <video id="video" controls autoPlay preload="metadata" width="640" height="360"></video> */}
+      <Cursor/>
     </div>
   );
 }
